@@ -13,10 +13,10 @@
             
              <nav id="navigation">
                 <ul id="nav">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="Project.html">projects</a></li>
-                    <li><a href=#>blog</a></li>
-                    <li><a href="About.html">about</a></li>
+                    <li><a id="home">home</a></li>
+                    <li><a id="projects">projects</a></li>
+                    <li><a id=#>blog</a></li>
+                    <li><a id="about">about</a></li>
 					<li><a target="_blank" href="http://sigkddseattle.acm.org/">SIGKDD Seattle</a></li>
                 </ul>
             </nav>
@@ -44,6 +44,43 @@
             <div id="sidebar">
                 <img src="Images/data-mining.png"  style="width:100%; height:100%;"/>
             </div>
+			<script type="text/javascript">
+var content_proj = " <ul>
+				   <li>
+					 Time Series Forecast Demo
+				   </li>
+				   <li>
+					 Text Clustering Demo
+				   </li>
+				   <li>
+					 Classification Demo
+				   </li>
+				   <li>
+					 Linear Regression Demo
+				   </li>
+				   <li>
+					 User Segmentation
+				   </li>
+				   <li>
+					 Recommender System
+				   </li>
+				   <li>
+					 Anomaly Detection
+				   </li>
+				   <li>
+					 Sentiment Detection
+				   </li>
+				   <li>
+					 Web Client (Javascript-based) Neural Network General Classifier
+				   </li>
+				 </ul> ";
+	$(document).ready(function() { 
+	$("#projects").click(function() {
+	$( "#content_area" ).html(content);
+	});
+	});
+</script>
+
             
             <footer>
                 <p>All rights reserved</p>
