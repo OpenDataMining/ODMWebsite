@@ -43,14 +43,16 @@ $(document).ready(function() {
     //	$("#content_area").css("width", "750px");
     //	$("#content_area").css("margin", "20px 0 20px 0");
 //	$("#content_area").css("padding", "10px");
-//	$("#sidebar").css("visibility", "visible"); 
+	$("#sidebar").css("visibility", "visible");
 	$("#projects").click(function() {
 	$("#content_area").html(content_proj);
-	$("#content_area").css(css_style);
+	$("#content_area").css({'float': 'left',    'width': '750px',    'margin': '20px 0 20px 0',    'padding': '10px'});
+	$("#sidebar").css("visibility", "visible");
+		
 	});
 	$("#home").click(function() {
 	$("#content_area").html(content_home);
-	$("#content_area").css(css_style);
+	$("#content_area").css({'float': 'left',    'width': '750px',    'margin': '20px 0 20px 0',    'padding': '10px'});
 	});
 	$("#about").click(function() {
 	$("#content_area").html(content_about);
