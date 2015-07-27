@@ -37,6 +37,11 @@ var content_about='<hr><br>Ying Li<p align="justify"> <img src="Images/YingLi.jp
 
 $(document).ready(function() {
 	$("#content_area").html(content_home);
+	$("#content_area").css("float", "left");
+    	$("#content_area").css("width", "750px");
+    	$("#content_area").css("margin", "20px 0 20px 0");
+	 $("#content_area").css("padding", "10px");
+	$("#sidebar").css("visibility", "visible"); 
 	$("#projects").click(function() {
 	$("#content_area").html(content_proj);
 	});
@@ -46,8 +51,8 @@ $(document).ready(function() {
 	$("#about").click(function() {
 	$("#content_area").html(content_about);
 	$("#sidebar").css("visibility", "hidden"); 
-//	$("#content_area").css("position","relative"); 
-//	$("#content_area").css("left","135px");
+	$("#content_area").css("position","relative"); 
+	$("#content_area").css("left","135px");
 
 	});
 	});
