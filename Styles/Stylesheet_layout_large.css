@@ -28,6 +28,9 @@ body p
     height: 160px;
 }
 
+#nav-trigger {
+    display:none;
+}
 #content_area
 {
     float: left;
@@ -64,13 +67,18 @@ footer
     height: 60px;
     border: 3px solid #E3E3E3;
     margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
     text-shadow: 0.1em 0.1em #333;
+    width:1080px;
     background-image: url(../Images/silverBackground.jpg);
 }
-
 #nav
 {
     list-style: none;
+
+
+
 }
 
 #nav ul
